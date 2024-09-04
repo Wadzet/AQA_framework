@@ -2,6 +2,12 @@ package task_3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//V3.
+//Array Intersection: Write a Java program that takes two arrays of integers and finds their intersection. Your program should prompt the user to enter the size and the elements of both arrays and then output the common elements between them.
+//Make ArrayList from the result array and perform the following operations: a) Add an element to the end of the list; b) Remove an element from the list; c) Replace an element in the list; d) Sort the list in alphabetical order; e) Print the elements of the list;
+//Make up the situation for ClassCastException. Catch it and display the explanation for your custom case.
+
+
 public class Main {
 
     public static void main(String[] args) {
