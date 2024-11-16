@@ -9,11 +9,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // Load DB_PASSWORD from .env
         Dotenv dotenv = Dotenv.load();
         System.setProperty("DB_PASSWORD", dotenv.get("DB_PASSWORD"));
 
-        // Hibernate setup
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Person.class)

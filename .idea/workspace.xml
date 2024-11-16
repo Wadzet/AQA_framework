@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a59fb76-194d-4064-b1c8-711b0bb072a0" name="Changes" comment="complete task 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_6/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_6/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_6/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_7/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_7/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_7/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/vadymzastavnyi/AQA_framework/src/main/java/task_7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -166,7 +163,7 @@
       <workItem from="1731672781048" duration="148000" />
       <workItem from="1732033595022" duration="148000" />
       <workItem from="1732220971151" duration="254000" />
-      <workItem from="1732221454289" duration="8188000" />
+      <workItem from="1732221454289" duration="8514000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <option name="closed" value="true" />
