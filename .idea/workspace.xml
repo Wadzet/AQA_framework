@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a59fb76-194d-4064-b1c8-711b0bb072a0" name="Changes" comment="complete task 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_5/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_5/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_5/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/task_5/input.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/task_5/input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_6/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_6/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_6/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -68,7 +68,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.task_5.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CustomClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task_4.CustomClass" />
       <module name="AQA_framework" />
@@ -95,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadSignal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task_4.ThreadSignal" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task_6.Main" />
       <module name="AQA_framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="task_4.*" />
+          <option name="PATTERN" value="task_6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="task_3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task_3.Main" />
+    <configuration name="ThreadSignal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task_4.ThreadSignal" />
       <module name="AQA_framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="task_3.*" />
+          <option name="PATTERN" value="task_4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.task_5.Main" />
         <item itemvalue="Application.CustomClass" />
         <item itemvalue="Application.GenericPrinter" />
         <item itemvalue="Application.ThreadSignal" />
-        <item itemvalue="Application.task_3.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +166,7 @@
       <workItem from="1731672781048" duration="148000" />
       <workItem from="1732033595022" duration="148000" />
       <workItem from="1732220971151" duration="254000" />
-      <workItem from="1732221454289" duration="2344000" />
+      <workItem from="1732221454289" duration="8188000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <option name="closed" value="true" />
