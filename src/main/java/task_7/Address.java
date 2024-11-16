@@ -1,4 +1,4 @@
-package task_6;
+package task_7;
 
 import jakarta.persistence.*;
 
@@ -7,25 +7,20 @@ import jakarta.persistence.*;
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     private String street;
     private String city;
     private String state;
 
-    public Address() {}
+    @OneToOne(mappedBy = "address", cascade = CascadeType.ALL)
+    private Person person;
 
-    public Address(String street, String city, String state) {
-        this.street = street;
-        this.city = city;
-        this.state = state;
-    }
-
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -53,13 +48,11 @@ public class Address {
         this.state = state;
     }
 
-    @Override
-    public String toString() {
-        return "Address{" +
-                "id=" + id +
-                ", street='" + street + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                '}';
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 }

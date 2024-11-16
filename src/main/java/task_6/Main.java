@@ -4,8 +4,14 @@ import io.github.cdimascio.dotenv.Dotenv;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
 import java.util.List;
+
+//Install MySQL server (or any SQL like db)
+//Make at least two tables (Entities from the previous task or any additional if needed)
+//Make models for those Entities (from Task_5)
+//Setup Hibernate for those Entities and local DB
+//Check basic CRUD (create, read, update, and delete the BD records using Hibernate)
+//Generate a few rows into all tables
 
 public class Main {
     public static void main(String[] args) {

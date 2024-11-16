@@ -17,5 +17,11 @@
 
         <mapping class="task_6.Person"/>
         <mapping class="task_6.Address"/>
+
+        <mapping class="task_7.Person"/>
+        <mapping class="task_7.Address"/>
+        <mapping class="task_7.Phone"/>
+        <mapping class="task_7.Project"/>
+
     </session-factory>
 </hibernate-configuration>

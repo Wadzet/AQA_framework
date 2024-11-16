@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Task_8" verbose="5" data-provider-thread-count="6">
+    <test name="Task8_test" thread-count="10" parallel="methods">
+        <packages>
+            <package name="task_8.Task_8Test"/>
+        </packages>
+    </test>
+</suite>
