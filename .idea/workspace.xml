@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a59fb76-194d-4064-b1c8-711b0bb072a0" name="Changes" comment="complete task 2">
+      <change afterPath="$PROJECT_DIR$/driver/chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/task_10/Task10Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/task_10/Task10Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +58,13 @@
     "Application.task_5.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.Task10Manager.executor": "Run",
+    "TestNG.Task10Manager.task10Manager.executor": "Run",
+    "TestNG.Task10Test.executor": "Run",
     "TestNG.Task_8Test.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/vadymzastavnyi/AQA_framework/src/main/java/task_7",
+    "last_opened_file_path": "/Users/vadymzastavnyi/AQA_framework/Driver",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,42 +75,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Driver" />
       <recent name="$PROJECT_DIR$/src/main/java/task_7" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Driver" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="task_8" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Task_8Test">
-    <configuration name="CustomClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task_4.CustomClass" />
-      <module name="AQA_framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task_4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GenericPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task_4.GenericPrinter" />
-      <module name="AQA_framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task_4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Task10Manager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task_6.Main" />
       <module name="AQA_framework" />
@@ -130,6 +113,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task10Manager" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AQA_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task_10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task_10" />
+      <option name="MAIN_CLASS_NAME" value="task_10.Task10Manager" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task10Test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AQA_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task_10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task_10" />
+      <option name="MAIN_CLASS_NAME" value="task_10.Task10Test" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task_8Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AQA_framework" />
       <extension name="coverage">
@@ -149,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Task10Manager" />
+        <item itemvalue="TestNG.Task10Test" />
         <item itemvalue="TestNG.Task_8Test" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.task_5.Main" />
-        <item itemvalue="Application.CustomClass" />
-        <item itemvalue="Application.GenericPrinter" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +197,7 @@
       <workItem from="1732033595022" duration="148000" />
       <workItem from="1732220971151" duration="254000" />
       <workItem from="1732221454289" duration="17403000" />
+      <workItem from="1733486342153" duration="8690000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <option name="closed" value="true" />
