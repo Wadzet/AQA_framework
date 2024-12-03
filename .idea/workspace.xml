@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a59fb76-194d-4064-b1c8-711b0bb072a0" name="Changes" comment="complete task 2" />
+    <list default="true" id="0a59fb76-194d-4064-b1c8-711b0bb072a0" name="Changes" comment="complete task 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/task_11/Task11Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/task_11/Task11Test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,7 +204,7 @@
       <workItem from="1732033595022" duration="148000" />
       <workItem from="1732220971151" duration="254000" />
       <workItem from="1732221454289" duration="17403000" />
-      <workItem from="1733486342153" duration="23901000" />
+      <workItem from="1733486342153" duration="30313000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <option name="closed" value="true" />

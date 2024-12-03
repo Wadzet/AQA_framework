@@ -65,3 +65,11 @@ public class Task11Test {
         driver.quit();
     }
 }
+
+//Scenario (new account)
+//- Navigate to the sign-up page
+//- Enter a valid email address, a username, and a strong password
+//- Click on the "Sign Up" button
+//- Verify that the user account is created
+//- Click on the "Log In" button
+//- Verify that we successfully logged
