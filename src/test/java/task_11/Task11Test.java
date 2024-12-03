@@ -1,44 +1,67 @@
 package task_11;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class Task11Test {
     private WebDriver driver;
-    private HomePageBO homePageBO;
+    private WebDriverWait wait;
+    private final String baseUrl = "https://www.demoblaze.com";
+    private final String username = "test_user_" + System.currentTimeMillis();
+    private final String password = "test_password";
 
     @BeforeTest
-    void setUp() {
-        driver = DriverProvider.getDriver();
-        SignUpPagePO signUpPagePO = new SignUpPagePO(driver);
-        HomePagePO homePagePO = new HomePagePO(driver);
-        homePageBO = new HomePageBO(signUpPagePO, homePagePO);
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+        driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.manage().window().maximize();
     }
-
     @Test
-    void testUserSignUp() {
-        driver.get("https://www.demoblaze.com/");
-        boolean isLoggedIn = homePageBO.registerNewUser("testuserVadym", "admin");
-        Assert.assertTrue(isLoggedIn, "User was not logged in after sign-up.");
+    public void testSignUpAndLogin() {
+        driver.get(baseUrl);
+
+        WebElement signUpButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("signin2")));
+        signUpButton.click();
+
+        WebElement signUpUsername = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("sign-username")));
+        signUpUsername.sendKeys(username);
+        WebElement signUpPassword = driver.findElement(By.id("sign-password"));
+        signUpPassword.sendKeys(password);
+
+        WebElement signUpConfirmButton = driver.findElement(By.xpath("//button[text()='Sign up']"));
+        signUpConfirmButton.click();
+
+        wait.until(ExpectedConditions.alertIsPresent());
+        String alertText = driver.switchTo().alert().getText();
+        driver.switchTo().alert().accept();
+        Assert.assertEquals(alertText, "Sign up successful.", "Sign up was not successful.");
+
+        WebElement logInButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("login2")));
+        logInButton.click();
+        WebElement logInUsername = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("loginusername")));
+        logInUsername.sendKeys(username);
+        WebElement logInPassword = driver.findElement(By.id("loginpassword"));
+        logInPassword.sendKeys(password);
+
+        WebElement logInConfirmButton = driver.findElement(By.xpath("//button[text()='Log in']"));
+        logInConfirmButton.click();
+        WebElement logOutButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("logout2")));
+        Assert.assertTrue(logOutButton.isDisplayed(), "Log out button is not displayed. Login might have failed.");
     }
 
     @AfterTest
-    void tearDown() {
-        DriverProvider.quitDriver();
+    public void tearDown() {
+        driver.quit();
     }
 }
-
-//General task
-//1. Make up one simple UI end-to-end test case for your test page from Task_10 - https://www.demoblaze.com
-//2. Automate that scenario using WebDriver
-//3. Create PageObject (use Busines object if need)for all pages used in scenario
-//
-//Scenario example (new account)
-//- Navigate to the sign-up page
-//- Enter a valid email address, a username, and a strong password
-//- Click on the "Sign Up" button
-//- Verify that the user is redirected to the home page
-//- Verify that the user account is created andlogged in
