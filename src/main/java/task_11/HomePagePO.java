@@ -9,11 +9,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class HomePagePO {
-    private WebDriver driver;
-    private WebDriverWait wait;
+    WebDriver driver;
+    WebDriverWait wait;
 
-    private By signUpMenu = By.id("signin2");
-    private By loginMenu = By.id("login2");
+    By signUpMenu = By.id("signin2");
+    By loginMenu = By.id("login2");
 
     public HomePagePO(WebDriver driver) {
         this.driver = driver;

@@ -3,19 +3,18 @@ package task_11;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
 public class SignUpPagePO {
-    private WebDriver driver;
-    private WebDriverWait wait;
+    WebDriver driver;
+    WebDriverWait wait;
 
-    private By usernameField = By.id("sign-username");
-    private By passwordField = By.id("sign-password");
-    private By signUpButton = By.xpath("//button[text()='Sign up']");
+    By usernameField = By.id("sign-username");
+    By passwordField = By.id("sign-password");
+    By signUpButton = By.xpath("//button[text()='Sign up']");
 
     public SignUpPagePO(WebDriver driver) {
         this.driver = driver;

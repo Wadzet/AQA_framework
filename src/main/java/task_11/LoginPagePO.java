@@ -6,19 +6,19 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPagePO {
-    private WebDriver driver;
+    WebDriver driver;
 
     @FindBy(id = "loginusername")
-    private WebElement usernameField;
+    WebElement usernameField;
 
     @FindBy(id = "loginpassword")
-    private WebElement passwordField;
+    WebElement passwordField;
 
     @FindBy(xpath = "//button[text()='Log in']")
-    private WebElement loginButton;
+    WebElement loginButton;
 
     @FindBy(id = "nameofuser")
-    private WebElement loggedInUser;
+    WebElement loggedInUser;
 
     public LoginPagePO(WebDriver driver) {
         this.driver = driver;
