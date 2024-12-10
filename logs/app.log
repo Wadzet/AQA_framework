@@ -1,0 +1,48 @@
+2024-12-15 17:38:02 INFO  MyExecutionListener.onExecutionStart - Execution started: Initializing resources.
+2024-12-15 17:38:02 INFO  MyTestListener.onStart - Test suite started: Surefire test
+2024-12-15 17:38:06 INFO  MyTestListener.onTestStart - Test started: testWithDataProvider1
+2024-12-15 17:38:06 INFO  MyTestListener.onTestSuccess - Test passed: testWithDataProvider1
+2024-12-15 17:38:06 INFO  MyTestListener.onTestStart - Test started: testWithDataProvider1
+2024-12-15 17:38:06 INFO  MyTestListener.onTestSuccess - Test passed: testWithDataProvider1
+2024-12-15 17:38:06 INFO  MyTestListener.onTestStart - Test started: testWithDataProvider1
+2024-12-15 17:38:06 INFO  MyTestListener.onTestSuccess - Test passed: testWithDataProvider1
+2024-12-15 17:38:06 INFO  MyTestListener.onTestStart - Test started: testWithDataProvider2
+2024-12-15 17:38:06 INFO  MyTestListener.onTestSuccess - Test passed: testWithDataProvider2
+2024-12-15 17:38:06 INFO  MyTestListener.onTestStart - Test started: testWithDataProvider2
+2024-12-15 17:38:06 INFO  MyTestListener.onTestSuccess - Test passed: testWithDataProvider2
+2024-12-15 17:38:06 INFO  MyTestListener.onTestStart - Test started: testWithDataProvider2
+2024-12-15 17:38:06 INFO  MyTestListener.onTestSuccess - Test passed: testWithDataProvider2
+2024-12-15 17:38:06 INFO  MyTestListener.onTestStart - Test started: testWithParameters
+2024-12-15 17:38:06 INFO  MyTestListener.onTestSuccess - Test passed: testWithParameters
+2024-12-15 17:38:06 INFO  MyTestListener.onTestStart - Test started: failingTest
+2024-12-15 17:38:06 ERROR MyTestListener.onTestFailure - Test failed: failingTest
+2024-12-15 17:38:06 INFO  MyTestListener.onTestStart - Test started: sampleTest
+2024-12-15 17:38:06 INFO  MyTestListener.onTestSuccess - Test passed: sampleTest
+2024-12-15 17:38:08 INFO  MyTestListener.onTestStart - Test started: testFullScenario
+2024-12-15 17:38:12 INFO  MyTestListener.onTestSuccess - Test passed: testFullScenario
+2024-12-15 17:38:12 INFO  MyTestListener.onTestStart - Test started: task10Test
+2024-12-15 17:38:13 INFO  MyTestListener.onTestSuccess - Test passed: task10Test
+2024-12-15 17:38:13 INFO  MyTestListener.onTestStart - Test started: testSignUpAndLogin
+2024-12-15 17:38:17 INFO  MyTestListener.onTestSuccess - Test passed: testSignUpAndLogin
+2024-12-15 17:38:17 INFO  MyTestListener.onFinish - Test suite finished: Surefire test
+2024-12-15 17:38:17 INFO  MyExecutionListener.onExecutionFinish - Execution finished: Cleaning up resources.
+2024-12-15 17:38:37 INFO  MyExecutionListener.onExecutionStart - Execution started: Initializing resources.
+2024-12-15 17:38:37 INFO  MyTestListener.onStart - Test suite started: AQA_framework
+2024-12-15 17:38:37 INFO  MyTestListener.onTestStart - Test started: failingTest
+2024-12-15 17:38:37 ERROR MyTestListener.onTestFailure - Test failed: failingTest
+2024-12-15 17:38:37 INFO  MyTestListener.onTestStart - Test started: sampleTest
+2024-12-15 17:38:37 INFO  MyTestListener.onTestSuccess - Test passed: sampleTest
+2024-12-15 17:38:37 INFO  MyTestListener.onFinish - Test suite finished: AQA_framework
+2024-12-15 17:38:37 INFO  MyExecutionListener.onExecutionFinish - Execution finished: Cleaning up resources.
+2024-12-15 17:53:37 INFO  MyExecutionListener.onExecutionStart - onExecutionStart: Starting execution and initializing resources.
+2024-12-15 17:53:37 INFO  MySuiteListener.onStart - onStart: Setting up environment for test suite - Default Suite
+2024-12-15 17:53:37 INFO  MyTestListener.onStart - onStart: Setting up test data and starting browser.
+2024-12-15 17:53:37 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testFailure
+2024-12-15 17:53:37 ERROR MyTestListener.onTestFailure - onTestFailure: Test failed - testFailure
+2024-12-15 17:53:37 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testSkip
+2024-12-15 17:53:37 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testSkip
+2024-12-15 17:53:37 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testSuccess
+2024-12-15 17:53:37 INFO  MyTestListener.onTestSuccess - onTestSuccess: Test passed - testSuccess
+2024-12-15 17:53:37 INFO  MyTestListener.onFinish - onFinish: Closing browser and cleaning up resources.
+2024-12-15 17:53:37 INFO  MySuiteListener.onFinish - onFinish: Tearing down environment for test suite - Default Suite
+2024-12-15 17:53:37 INFO  MyExecutionListener.onExecutionFinish - onExecutionFinish: Execution finished. Closing resources.

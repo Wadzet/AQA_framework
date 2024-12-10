@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a59fb76-194d-4064-b1c8-711b0bb072a0" name="Changes" comment="complete task 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_12/HomePagePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_12/HyperlinkWrapperPO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_12/LoginPagePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_12/SignUpPagePO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/task_12/Task12Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_13/MyExecutionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_13/MySuiteListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/task_13/MyTestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/video.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/task_13/Task13Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +66,7 @@
     "TestNG.Task11Test.executor": "Run",
     "TestNG.Task11Test.testSignUp.executor": "Run",
     "TestNG.Task12Test.executor": "Run",
+    "TestNG.Task13Test.executor": "Run",
     "TestNG.Task_8Test.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -90,7 +93,7 @@
       <recent name="task_8" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Task12Test">
+  <component name="RunManager" selected="TestNG.Task13Test">
     <configuration name="Task10Manager" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AQA_framework" />
       <extension name="coverage">
@@ -101,23 +104,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="task_10" />
       <option name="MAIN_CLASS_NAME" value="task_10.Task10Manager" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task10Test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AQA_framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="task_10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="task_10" />
-      <option name="MAIN_CLASS_NAME" value="task_10.Task10Test" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -177,13 +163,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task13Test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AQA_framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task_13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="task_13" />
+      <option name="MAIN_CLASS_NAME" value="task_13.Task13Test" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Task13Test" />
         <item itemvalue="TestNG.Task12Test" />
         <item itemvalue="TestNG.Task11Test" />
         <item itemvalue="TestNG.Task11Test.testSignUp" />
         <item itemvalue="TestNG.Task10Manager" />
-        <item itemvalue="TestNG.Task10Test" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +213,7 @@
       <workItem from="1732033595022" duration="148000" />
       <workItem from="1732220971151" duration="254000" />
       <workItem from="1732221454289" duration="17403000" />
-      <workItem from="1733486342153" duration="34118000" />
+      <workItem from="1733486342153" duration="40362000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <option name="closed" value="true" />
@@ -233,6 +236,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git init" />
