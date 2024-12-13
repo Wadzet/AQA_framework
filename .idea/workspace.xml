@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a59fb76-194d-4064-b1c8-711b0bb072a0" name="Changes" comment="complete task 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_13/MyExecutionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_13/MySuiteListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/task_13/MyTestListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/video.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/task_13/Task13Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/property.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task_15/Trello_AQA.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +66,7 @@
     "TestNG.Task_8Test.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/vadymzastavnyi/AQA_framework/src/main/java/task_12",
+    "last_opened_file_path": "/Users/vadymzastavnyi/AQA_framework/src/main/java/task_15",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,11 +77,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/task_15" />
       <recent name="$PROJECT_DIR$/src/main/java/task_12" />
       <recent name="$PROJECT_DIR$/Driver" />
       <recent name="$PROJECT_DIR$/src/main/java/task_7" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/task_15" />
       <recent name="$PROJECT_DIR$/Driver" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>

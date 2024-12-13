@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "e397d800-398e-42d3-a03c-956bc6bb7255",
+		"name": "Trello_AQA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25868586"
+	},
+	"item": [
+		{
+			"name": "Create Card",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList={{Trello_ID_List}}&key={{Trello_API_KEY}}&token={{Trello_Token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "{{Trello_ID_List}}"
+						},
+						{
+							"key": "key",
+							"value": "{{Trello_API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{Trello_Token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/members/me/boards?key={{Trello_API_KEY}}&token={{Trello_Token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{Trello_API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{Trello_Token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create list",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=My%20SecondList&idBoard={{Trello_Board_ID}}&key={{Trello_API_KEY}}&token={{Trello_Token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "My%20SecondList"
+						},
+						{
+							"key": "idBoard",
+							"value": "{{Trello_Board_ID}}"
+						},
+						{
+							"key": "key",
+							"value": "{{Trello_API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{Trello_Token}}"
+						},
+						{
+							"key": null,
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get members",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/673fe5eb153472932c8191fe/members?key={{Trello_API_KEY}}&token={{Trello_API_KEY}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"673fe5eb153472932c8191fe",
+						"members"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{Trello_API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{Trello_API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add member to card",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/676011059943b3aa32ff6795/idMembers?key={{Trello_API_KEY}}&token={{Trello_Token}}&value=670451fff4afb535b7bab9e8",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"676011059943b3aa32ff6795",
+						"idMembers"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{Trello_API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{Trello_Token}}"
+						},
+						{
+							"key": "value",
+							"value": "670451fff4afb535b7bab9e8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update description",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/676011059943b3aa32ff6795?key={{Trello_API_KEY}}&token={{Trello_Token}}&desc=This%20is%20the%20updated%20description",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"676011059943b3aa32ff6795"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{Trello_API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{Trello_Token}}"
+						},
+						{
+							"key": "desc",
+							"value": "This%20is%20the%20updated%20description"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "move card to another board",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/676011059943b3aa32ff6795?idList=676011f00f2aa603129b088e&key={{Trello_API_KEY}}&token={{Trello_Token}}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"676011059943b3aa32ff6795"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "676011f00f2aa603129b088e"
+						},
+						{
+							"key": "key",
+							"value": "{{Trello_API_KEY}}"
+						},
+						{
+							"key": "token",
+							"value": "{{Trello_Token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
