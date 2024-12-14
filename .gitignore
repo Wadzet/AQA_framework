@@ -40,3 +40,4 @@ build/
 .env
 
 /src/main/resources/property.config
+./src/main/resources/property.config

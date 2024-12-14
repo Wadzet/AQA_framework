@@ -1,1 +1,0 @@
-{"uuid":"c7e4f4df-d66f-4747-83a7-bf9e57474736","name":"task_12.Task12Test.setUp","children":["31d7a3eb-2567-446a-8e8c-0bf178b2cd7b"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1734202423339,"stop":1734202424778}],"afters":[],"start":1734202423338,"stop":1734202424778}
