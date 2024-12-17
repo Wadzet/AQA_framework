@@ -46,3 +46,43 @@
 2024-12-15 17:53:37 INFO  MyTestListener.onFinish - onFinish: Closing browser and cleaning up resources.
 2024-12-15 17:53:37 INFO  MySuiteListener.onFinish - onFinish: Tearing down environment for test suite - Default Suite
 2024-12-15 17:53:37 INFO  MyExecutionListener.onExecutionFinish - onExecutionFinish: Execution finished. Closing resources.
+2024-12-17 19:56:15 INFO  MyExecutionListener.onExecutionStart - onExecutionStart: Starting execution and initializing resources.
+2024-12-17 19:56:15 INFO  MySuiteListener.onStart - onStart: Setting up environment for test suite - Surefire suite
+2024-12-17 19:56:15 INFO  MyTestListener.onStart - onStart: Setting up test data and starting browser.
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testWithDataProvider1
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testWithDataProvider1
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testWithDataProvider1
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testWithDataProvider1
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testWithDataProvider1
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testWithDataProvider1
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testWithDataProvider2
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testWithDataProvider2
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testWithDataProvider2
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testWithDataProvider2
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testWithDataProvider2
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testWithDataProvider2
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testWithParameters
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testWithParameters
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testFailure
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testFailure
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testSkip
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testSkip
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testSuccess
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testSuccess
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testFullScenario
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testFullScenario
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - task10Test
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - task10Test
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - testSignUpAndLogin
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - testSignUpAndLogin
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - createCardTest
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - createCardTest
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - addMemberToCardTest
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - addMemberToCardTest
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - updateCardDescriptionTest
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - updateCardDescriptionTest
+2024-12-17 19:56:16 INFO  MyTestListener.onTestStart - onTestStart: Executing test method - moveCardToAnotherListTest
+2024-12-17 19:56:16 WARN  MyTestListener.onTestSkipped - onTestSkipped: Test skipped - moveCardToAnotherListTest
+2024-12-17 19:56:16 INFO  MyTestListener.onFinish - onFinish: Closing browser and cleaning up resources.
+2024-12-17 19:56:16 INFO  MySuiteListener.onFinish - onFinish: Tearing down environment for test suite - Surefire suite
+2024-12-17 19:56:16 INFO  MyExecutionListener.onExecutionFinish - onExecutionFinish: Execution finished. Closing resources.

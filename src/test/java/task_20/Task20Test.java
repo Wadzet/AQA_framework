@@ -5,42 +5,42 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
-import org.apache.commons.io.FileUtils;
 
 public class Task20Test {
     public static void main(String[] args) {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
-        caps.setCapability("deviceName", "samsungS20");
-        caps.setCapability("appPackage", "com.android.calculator2");
-        caps.setCapability("appActivity", ".Calculator");
+        caps.setCapability("automationName", "UiAutomator2");
+        caps.setCapability("deviceName", "RF8W80XNZLN");
+        caps.setCapability("appPackage", "com.sec.android.app.popupcalculator");
+        caps.setCapability("appActivity", "com.sec.android.app.popupcalculator.Calculator");
 
         AndroidDriver driver = null;
 
         try {
-            driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+            driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), caps);
 
-            driver.findElement(By.id("com.android.calculator2:id/digit_1")).click();
-            driver.findElement(By.id("com.android.calculator2:id/digit_0")).click();
+            driver.findElement(By.id("com.sec.android.app.popupcalculator:id/calc_keypad_btn_01")).click();
+            driver.findElement(By.id("com.sec.android.app.popupcalculator:id/calc_keypad_btn_00")).click();
             captureScreenshot(driver, "step_1_enter_10");
 
-            driver.findElement(By.id("com.android.calculator2:id/op_pct")).click();
+            driver.findElement(By.id("com.sec.android.app.popupcalculator:id/calc_keypad_btn_percentage")).click();
             captureScreenshot(driver, "step_2_press_percentage");
 
-            driver.findElement(By.id("com.android.calculator2:id/digit_5")).click();
-            driver.findElement(By.id("com.android.calculator2:id/digit_0")).click();
+            driver.findElement(By.id("com.sec.android.app.popupcalculator:id/calc_keypad_btn_05")).click();
+            driver.findElement(By.id("com.sec.android.app.popupcalculator:id/calc_keypad_btn_00")).click();
             captureScreenshot(driver, "step_3_enter_50");
 
-            driver.findElement(By.id("com.android.calculator2:id/eq")).click();
+            driver.findElement(By.id("com.sec.android.app.popupcalculator:id/calc_keypad_btn_equal")).click();
             captureScreenshot(driver, "step_4_press_equals");
 
-            WebElement resultElement = driver.findElement(By.id("com.android.calculator2:id/result"));
-            String result = resultElement.getText();
+            WebElement resultField = driver.findElement(By.id("com.sec.android.app.popupcalculator:id/calc_edt_formula"));
+            String result = resultField.getText().replaceAll("[^0-9]", "");
 
             if ("5".equals(result)) {
                 System.out.println("Test Passed: Calculation is correct.");
@@ -48,11 +48,7 @@ public class Task20Test {
                 System.out.println("Test Failed: Expected 5 but got " + result);
             }
 
-        } catch (MalformedURLException e) {
-            System.out.println("Invalid Appium Server URL");
-            e.printStackTrace();
         } catch (Exception e) {
-            System.out.println("An error occurred during test execution");
             e.printStackTrace();
         } finally {
             if (driver != null) {
@@ -63,8 +59,15 @@ public class Task20Test {
 
     private static void captureScreenshot(AndroidDriver driver, String stepName) {
         File srcFile = driver.getScreenshotAs(OutputType.FILE);
+        String directory = "screenshots";
+        File targetDir = new File(directory);
+
+        if (!targetDir.exists()) {
+            targetDir.mkdir();
+        }
+
         try {
-            FileUtils.copyFile(srcFile, new File(stepName + ".png"));
+            FileUtils.copyFile(srcFile, new File(directory + "/" + stepName + ".png"));
             System.out.println("Screenshot captured for step: " + stepName);
         } catch (IOException e) {
             System.out.println("Failed to save screenshot for step: " + stepName);
